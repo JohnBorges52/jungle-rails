@@ -24,7 +24,7 @@ class OrdersController < ApplicationController
   def empty_cart!
     # empty hash means no products in cart :)
     update_cart({})
-    
+
   end
 
   def perform_stripe_charge
@@ -44,6 +44,7 @@ class OrdersController < ApplicationController
     )
 
     enhanced_cart.each do |entry|
+      
       product = entry[:product]
       quantity = entry[:quantity]
       order.line_items.new(
