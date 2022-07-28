@@ -4,6 +4,13 @@ Rails.application.routes.draw do
 
   get '/about' => 'about#index'
 
+  get 'login' => 'users#index'
+  post 'login' => 'sessions#create'
+
+  get 'sign_up', to: 'users#new'
+  post 'sign_up', to: 'users#create'
+
+  get 'logout' => 'sessions#destroy'
 
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
