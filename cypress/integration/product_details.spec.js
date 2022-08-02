@@ -5,12 +5,7 @@ describe('Go to the home page', () => {
   })
 
   it("Clicks on a product", () => {
-
     cy.get(".products article:first").click()
-
-
-
-
   });
 
 
