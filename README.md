@@ -3,7 +3,7 @@
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
 ## Final Product 
-!["img of the main page that shows the functionality of the web app with a list of products"]()
+!["img of the main page that shows the functionality of the web app with a list of products"](https://github.com/JohnBorges52/jungle-rails/blob/master/public/images/Screenshot%202022-08-03%20133741.jpg)
 
 ## Setup
 
