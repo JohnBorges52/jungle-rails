@@ -56,16 +56,15 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-          
-            Admin
+          Admin
           </a>
-          <li class="nav-item"> <%= link_to "About", "/about", class: "nav-link" %> </li>
           <ul class="dropdown-menu dropdown-menu-dark">
             <li><%= link_to 'Dashboard', [:admin, :root], class: "nav-link" %></li>
             <li><%= link_to 'Products', [:admin, :products], class: "nav-link" %></li>
             <li><%= link_to 'Category', [:admin, :categories], class: "nav-link" %></li>
           </ul>
         </li>
+          <li class="nav-item"> <%= link_to "About", "/about", class: "nav-link" %> </li>
         <li class="nav-item end-0">
           <%= link_to cart_path, class: "nav-link " do %> <%= fa_icon "shopping-cart" %>
           My Cart (<%= cart.size %>) <% end %>
